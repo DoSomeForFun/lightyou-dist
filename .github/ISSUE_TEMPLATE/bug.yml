@@ -1,0 +1,64 @@
+name: Bug report
+description: Something is broken or doesn't behave as expected in LightYou.
+title: "[Bug] "
+labels:
+  - feedback
+  - bug
+  - alpha
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us track down bugs during the alpha.
+        The in-app "Send feedback" button fills this out for you automatically — feel free to edit before submitting.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What went wrong? Short, clear sentences are perfect.
+      placeholder: The reader pane goes blank after I open the third article in a row.
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Minimal set of steps to trigger it.
+      placeholder: |
+        1. Save three URLs via Quick Save
+        2. Open the third one
+        3. Press J to navigate
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_actual
+    attributes:
+      label: Expected vs actual
+      placeholder: |
+        Expected: article list advances to the next item.
+        Actual: reader pane goes blank and no article is selected.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Copy the Environment block the in-app feedback button generates, or fill this out manually.
+      render: text
+      placeholder: |
+        LightYou:  0.1.0 (desktop)
+        Platform:  macOS 14.5.0
+        Locale:    en-US
+        UA:        Chrome/120.0.0.0 Safari/605.1.15
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before you submit
+      options:
+        - label: I redacted API keys, WebDAV passwords, and article URLs I don't want public.
+          required: true
