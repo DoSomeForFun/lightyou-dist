@@ -10,7 +10,7 @@ local-first reader for macOS, Windows, and Linux.
 
 → **[Latest release](https://github.com/DoSomeForFun/lightyou-dist/releases/latest)** — `.dmg` / `.msi` / `.exe` / `.AppImage` / `.deb` / `.rpm`, plus the signed `latest.json` used by the in-app auto-updater.
 
-Marketing site with OS auto-detection: **[lightyou.pages.dev](https://lightyou.pages.dev)** _(coming soon)_.
+Marketing site with OS auto-detection: <https://lightyou-website.leetao.workers.dev>
 
 ## Feedback
 
